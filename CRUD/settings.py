@@ -138,7 +138,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 if not DEBUG:    #Si no esta en desarrollo el proyecto va a utilizar los archivos estaticos de esta otra ruta:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 WHITENOISE_MANIFEST_STRICT = False
